@@ -6,7 +6,7 @@ $(window).scroll(function() {
             'box-shadow': '0px 3px 16px 1px rgba(0,0,0,0.75)',
             'background-color': '#bcd0f0'});
         $(".nav-text").addClass('hidden');
-        $(".menu-options").addClass('hidden');
+        $(".menu-options").offcanvas();
 
 
     } else {
