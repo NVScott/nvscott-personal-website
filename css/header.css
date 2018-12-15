@@ -21,10 +21,11 @@
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
+    transition: all 1s ease-in-out;
 }
 
 .nav-name.hidden {
-    transform: translateX(-25%);
+    transform: translateX(-15%);
     transition: transform 1s ease-in-out;
 }
 
@@ -36,6 +37,7 @@
 
 .nav-name.hidden li.spaced {
     padding-left: 0;
+    transition: all 1s ease-in-out;
 }
 
 .nav-name li.spaced {
@@ -54,6 +56,7 @@
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
+    transition: all 1s ease-in-out;
 }
 
 .nav-menu li {
@@ -72,14 +75,22 @@
 
 .flexed {
     flex-grow: 4;
-    transition: flex-grow 1000ms linear;
+    transition: flex-grow 1s ease-in-out;
 }
 
 .collapsed {
     /* Setting this to zero breaks the transition */
     flex-grow: 0.00001;
+    transition: all .5s ease-in-out;
+}
+
+.collapsed .nav-menu {
+    font-size: 0;
+    transition: all 1s ease-in-out;
 }
 
 .acronymed {
     flex-grow: .4;
+    transition: all 1s ease-in-out;
+
 }
