@@ -25,13 +25,13 @@
 
 .nav-name.hidden {
     transform: translateX(-25%);
-    transition: all 1s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .nav-name li {
     display: inline-block;
     opacity: 1;
-    transition: all 1s ease-in-out;
+    transition: opacity 1s ease-in-out, font-size 1s ease-in-out;
 }
 
 .nav-name.hidden li.spaced {
@@ -54,7 +54,6 @@
     list-style: none;
     padding-left: 0;
     margin-bottom: 0;
-    transition: all 1s ease-in-out;
 }
 
 .nav-menu li {
@@ -72,9 +71,6 @@
 }
 
 .flexed {
-    background: grey;
-    /* The border seems to cause drawing artifacts on transition. Probably a browser bug. */
-    /* border: 1px solid black; */
     flex-grow: 4;
     transition: flex-grow 1000ms linear;
 }
