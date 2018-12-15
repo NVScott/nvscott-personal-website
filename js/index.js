@@ -1,3 +1,7 @@
+$(window).on("load", function() {
+    $("body").removeClass("preload");
+});
+
 $(window).scroll(function() {
     if ($(window).scrollTop() > 129) {
         $('#sticky-bar').css({
@@ -6,7 +10,6 @@ $(window).scroll(function() {
             'box-shadow': '0px 3px 16px 1px rgba(0,0,0,0.75)',
             'background-color': '#bcd0f0'});
         $(".nav-name").addClass('hidden');
-
         $(".part2").removeClass('collapsed');
         $(".part1").addClass('acronymed');
 

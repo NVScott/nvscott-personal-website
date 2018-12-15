@@ -24,7 +24,8 @@
 }
 
 .nav-name.hidden {
-    /*transform: translateX(-47%);*/
+    transform: translateX(-25%);
+    transition: all 1s ease-in-out;
 }
 
 .nav-name li {
