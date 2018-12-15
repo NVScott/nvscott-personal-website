@@ -15,7 +15,6 @@
     transition: box-shadow .5s, font-size 1s, background-color .5s;
 }
 
-
 .nav-name {
     transform: translateX(0);
     text-align: center;
@@ -25,12 +24,13 @@
 }
 
 .nav-name.hidden {
-    transform: translateX(-47%);
+    /*transform: translateX(-47%);*/
 }
 
 .nav-name li {
     display: inline-block;
     opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
 .nav-name.hidden li.spaced {
@@ -61,3 +61,28 @@
     opacity: 1;
 }
 
+/*PART1, PART2*/
+.flexbox {
+    display: flex;
+    flex-flow: row;
+    width: 100vw;
+    margin-left:-15px;
+    padding:0;
+}
+
+.flexed {
+    background: grey;
+    /* The border seems to cause drawing artifacts on transition. Probably a browser bug. */
+    /* border: 1px solid black; */
+    flex-grow: 4;
+    transition: flex-grow 1000ms linear;
+}
+
+.collapsed {
+    /* Setting this to zero breaks the transition */
+    flex-grow: 0.00001;
+}
+
+.acronymed {
+    flex-grow: .4;
+}
