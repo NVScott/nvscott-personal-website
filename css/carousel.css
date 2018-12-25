@@ -44,4 +44,6 @@
 .five {
     background: pink;
 }
-\
+.two, .three, .four, .five {
+    display:none;
+}
