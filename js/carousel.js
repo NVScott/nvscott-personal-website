@@ -6,6 +6,11 @@ $(document).ready(function(){
         centerMode: true,
         infinite: true,
         centerPadding: '60px',
-        slidesToShow: 3
+        slidesToShow: 3,
+        focusOnSelect: true
+    });
+    $('.slider-little').on('afterChange', function(event, slick, currentSlide){
+        $('.content').hide();
+        $('.content[data-id=' + (currentSlide + 1) + ']').show();
     });
 });

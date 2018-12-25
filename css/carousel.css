@@ -17,3 +17,31 @@
 {
     color: red
 }
+
+.hideContent {
+    display: none;
+}
+
+.content {
+    font-size: 18px;
+    padding: 20px;
+    text-align:center;
+    color: white;
+}
+
+.one {
+    background: blue;
+}
+.two {
+    background: red;
+}
+.three {
+    background: purple;
+}
+.four {
+    background: green;
+}
+.five {
+    background: pink;
+}
+\
