@@ -1,6 +1,4 @@
 .center img {
-    margin-left: 10px;
-    margin-right: 10px;
     opacity: 0.4;
     transition: all 300ms ease;
 }
