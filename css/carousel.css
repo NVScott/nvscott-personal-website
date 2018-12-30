@@ -7,6 +7,21 @@
     opacity: 1;
 }
 
+.card-title {
+    font-weight: bold;
+}
+.card-body {
+    min-height: 244px;
+}
+/* the slides */
+.slick-slide {
+    margin: 0 5px;
+}
+/* the parent */
+.slick-list {
+    margin: 0 -5px;
+}
+
 .slick-prev:before, .slick-next:before {
     color: red;
 }
@@ -20,28 +35,6 @@
     display: none;
 }
 
-.content {
-    font-size: 18px;
-    padding: 20px;
-    text-align:center;
-    color: white;
-}
-
-.one {
-    background: blue;
-}
-.two {
-    background: red;
-}
-.three {
-    background: purple;
-}
-.four {
-    background: green;
-}
-.five {
-    background: pink;
-}
 .two, .three, .four, .five {
     display:none;
 }
